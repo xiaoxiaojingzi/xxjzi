@@ -1,0 +1,241 @@
+.jd_golbal {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 1000px;
+    background-color: #ccc;
+}
+.jd_search {
+    width: 100%;
+    max-width: 640px;
+    height: 40px;
+    background: rgba(233,35,34,0);
+    position: fixed;
+    z-index: 10;
+}
+
+.jd_logo {
+    width: 56px;
+    height: 30px;
+    background: url("../images/jd-sprites.png");
+    background-position: 0 -108px;
+    background-size: 200px 200px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0,-50%);
+}
+.jd_searchbox {
+    width: 100%;
+    height: 100%;
+    padding-left: 76px;
+    padding-right: 50px;
+}
+.jd_searchbox:before{
+    content: "";
+    display: block;
+    background: url("../images/jd-sprites.png");
+    background-size:200px 200px;
+    background-position: -56px -108px;
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    top: 9px;
+    left: 80px;
+}
+.jd_searchbox>input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 30px;
+}
+.jd_login {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+/*轮播图*/
+.jd_banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.jd_bannerImg {
+    /*width: 800%;*/
+   /* animation-name: myanimat ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(8);*/
+    /*display: flex;*/
+    position: relative;
+}
+.jd_bannerImg>li {
+   /*flex: 1;*/
+    float: left;
+
+}
+
+.jd_bannerImg>li img {
+    width: 100%;
+    display: block;/*取消图片基线对齐*/
+}
+/*标记*/
+.jd_bannerIndicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.jd_bannerIndicator>li:nth-of-type(1){
+    margin-left: 0;
+}
+.jd_bannerIndicator>li {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    float: left;
+    margin: 0 5px;
+}
+.active {
+    background-color: #fff;
+}
+/*@keyframes myanimat {
+    0%{
+        transform: translate(0,0);
+    }
+
+    100% {
+        transform: translate(-5120px,0);
+    }
+}*/
+/*导航栏*/
+.jd_nav {
+    width: 100%;
+
+}
+.jd_navImg {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.jd_navImg>li{
+    width: 25%;
+    text-align: center;
+    margin-top: 5px;
+}
+.jd_navImg>li img {
+    width: 50px;
+    height: 50px;
+}
+.jd_navImg>li p {
+    line-height: 25px;
+}
+/*产品介绍样式*/
+.jd_porduct {
+    width: 100%;
+}
+.jd_porductBox {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.jd_pContent {
+    width: 100%;
+    overflow: hidden;
+}
+.jd_pTip >h3{
+    color: #666;
+    line-height: 30px;
+    padding-left: 30px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+
+}
+.jd_pTip >h3:before{
+    width: 3px;
+    height: 15px;
+    background-color: #e92322;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 20px;
+}
+.jd_pContent>a {
+    float: left;
+    width: 50%;
+
+}
+.jd_pContent>a img {
+    width: 100%;
+    display: block;
+}
+.b_left{
+    border-left: 1px solid #ccc;
+}
+.b_right{
+    border-right: 1px solid #ccc;
+}
+.b_bottom{
+    border-bottom: 1px solid #ccc;
+}
+.jd_pTow a:first-child {
+    float: right;
+}
+/*秒杀样式*/
+.jd_sk {
+    overflow: hidden;
+}
+.jd_clock {
+    line-height: 30px;
+
+}
+.jd_more {
+    width: 80px;
+    float: right;
+    color: #666666;
+}
+.p_icon,.text,.jd_sk_time {
+    float: left;
+    margin-left: 10px;
+}
+.p_icon  {
+    width: 16px;
+    height: 20px;
+    background: url("../uploads/seckill-icon.png");
+    background-size: 16px 20px;
+    margin-top: 3px;
+}
+.text {
+    color: #e92322;
+}
+.jd_sk_time span {
+    background-color: #000000;
+    color: #fff;
+    /*display: inline-block;*/
+    padding: 0 2px;
+}
+.jd_sk_time span:nth-of-type(3),.jd_sk_time span:nth-of-type(6){
+    background-color: #fff;
+    color: #000000;
+}
+.jd_sk .jd_pContent ul {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+.jd_sk .jd_pContent ul>li {
+    flex: 1;
+    text-align: center;
+}
+.jd_sk .jd_pContent ul>li img{
+    width: 60%;
+}
